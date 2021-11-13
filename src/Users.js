@@ -31,12 +31,12 @@ export default function Users() {
             <CardGroup className="col-lg-3 m-1" key={user.id}>
                 <Card>
                     <Card.Body className="text-light bg-dark">
+                        <Card.Img src={user.avatar} alt="user" />
                         <Card.Title className="text-success">{user.name}</Card.Title>
                         <Card.Text>
                            <p> phone: {user.phone} </p>
                            <p> email: {user.email} </p>
                            <p> website: {user.website} </p>
-                          
                         </Card.Text>
                     </Card.Body>
                 </Card>
